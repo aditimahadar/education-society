@@ -1,0 +1,492 @@
+@import url('./common.css');
+@import url('./footer.css');
+:root {
+    --primary-clr: #0b1b69;
+    --yellow: #ffd027;
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #707385;
+}
+
+.banner-section {
+    width: 100%;
+    height: calc(100vh - 180px);
+    background: url('../images//edu1.jpg');
+    background-repeat: no-repeat;
+    background-size: 69% auto;
+    background-position: top right;
+    z-index: 1;
+}
+
+.banner-section:after {
+    content: '';
+    width: 35%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--primary-clr);
+    position: absolute;
+    z-index: -2;
+}
+
+.banner-section .over-wrapper {
+    width: 50%;
+    height: auto;
+    background: #fff;
+    padding: 50px;
+}
+
+.banner-section .over-wrapper h1 {
+    color: var(--primary-clr);
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner-section .watch-videowrap {
+    margin-top: 20px;
+}
+
+.banner-section .watch-videowrap .video-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid var(--yellow);
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-section .watch-videowrap .video-icon .fas {
+    color: var(--primary-clr);
+}
+
+.banner-section .watch-videowrap .video-icon:hover {
+    background: var(--primary-clr);
+    border: 0px;
+}
+
+.banner-section .video-icon:hover .fas {
+    color: var(--yellow);
+}
+
+.banner-section .watch-videowrap h3 {
+    font-size: 18px;
+    color: var(--primary-clr);
+}
+
+
+/********About Home *********/
+
+.about-us .team-availability {
+    margin-top: 30px;
+}
+
+.about-us .about-left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.about-us .about-left::after {
+    content: '';
+    width: 75%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    background: url('../images/edu4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us .about-left .over-about-img {
+    width: 60%;
+    height: 300px;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: #fff;
+    z-index: 5;
+}
+
+.about-us .about-left .over-about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us .about-right {
+    padding-left: 60px;
+}
+
+.about-us .team-availability .common-thumb .circle-wrap {
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    background: var(--yellow);
+    margin-bottom: 20px;
+}
+
+.about-us .team-availability .common-thumb .circle-wrap .fas {
+    font-size: 26px;
+    color: var(--primary-clr);
+}
+
+
+/*******About Us Page*******/
+
+
+/*-- banner-bottom --*/
+
+.banner .box {
+    background-color: var(--primary-clr);
+    color: var(--yellow);
+    box-shadow: #fff;
+    padding: 40px;
+}
+
+.banner-item h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.banner-item p {
+    margin: 0px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/*-- banner bottom--*/
+
+
+/*Main-section-start*/
+
+.main-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/edu1.jpg);
+    background-position: 0% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-section .background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: var(--secondary-color);
+    top: 0;
+}
+
+.main-section .title-links {
+    padding: 10px;
+}
+
+.main-section .title-links .title h2 {
+    color: #fff;
+    line-height: 1.2rem;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.main-section .title-links .links {
+    color: #fff;
+    margin-right: calc(10px/2);
+    margin-left: calc(10px/2);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-section .title-links .links ul li span:last-child {
+    padding-left: 10px;
+}
+
+.main-section .title-links .links ul li span:first-child {
+    color: var(--primary-color);
+    padding-left: 15px;
+}
+
+
+/*Main-section-end*/
+
+.main-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../images/edu1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 175px;
+    padding: 0px!important;
+}
+
+.for-space {
+    padding-top: 100px;
+}
+
+.main-wrapper .bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.96;
+    background: #0b1b69;
+    top: 0;
+    left: 0;
+}
+
+.for-padding {
+    padding: 10px 0;
+}
+
+.main-wrapper .left-wrap .left-wrap-title h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #ffffff;
+    padding: 0% 5% 0% 20%;
+}
+
+.main-wrapper .right-wrap .right-wrap-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #dedede;
+    padding: 0% 30% 0% 0%;
+}
+
+.inner-wrapper {
+    margin-top: 80px;
+}
+
+.main-thumbnail {
+    padding: 0% 5% 5% 20%;
+}
+
+.main-thumbnail .first-thumbnail .first-wrap-content h3 {
+    margin: 10px 0px 5px 0px;
+    font-size: 24px!important;
+    font-weight: 500!important;
+    line-height: 1.3em;
+    color: #fff;
+}
+
+.main-thumbnail .first-thumbnail .first-wrap-content p {
+    margin-bottom: .9rem;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    line-height: 1.5em;
+    color: #dedede;
+}
+
+.first-wrap-icon .circle-wrap {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: yellow;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 50%
+}
+
+.first-left-wrap {
+    margin-right: 15px;
+}
+
+.first-right-wrap {
+    margin-right: 15px;
+}
+
+.main-thumbnail .second-thumbnail .second-wrap-content h3 {
+    margin: 10px 0px 5px 0px;
+    font-size: 24px!important;
+    font-weight: 500!important;
+    line-height: 1.3em;
+    color: #fff;
+}
+
+.main-thumbnail .second-thumbnail .second-wrap-content p {
+    margin-bottom: .9rem;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    line-height: 1.5em;
+    color: #dedede;
+}
+
+.second-wrap-icon .circle-wrap {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: yellow;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 50%
+}
+
+.main-thumbnail .second-thumbnail .second-left-wrap {
+    margin: 10px 15px 0px 0px;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../images/handsome-electrician-checking-electrical-box-with-multimetr-in-corridor.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-wrapper .bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.71;
+    top: 0;
+    left: 0;
+}
+
+.video-play-icon {
+    position: absolute;
+    color: var(--primary-clr);
+    font-size: 20px;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+}
+
+.video-play-icon .circle-wrap {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: var(--yellow);
+    border-radius: 50%
+}
+
+
+/*******services***********/
+
+.services {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images//edu4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services .services-thumbnails .circle-wrapper {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+    background: var(--yellow);
+    margin-bottom: 20px;
+}
+
+.services .services-thumbnails h3 {
+    font-size: 26px !important;
+}
+
+.services .services-thumbnails p {
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+
+.services .services-thumbnails a {
+    margin-top: 15px;
+    color: var(--yellow);
+}
+
+.services .first-row {
+    margin-top: 50px;
+}
+
+
+/***gallery***/
+
+.item {
+    transition: .5s ease-in-out;
+}
+
+.item:hover {
+    filter: brightness(80%);
+}
+
+.gallery .title h4 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--primary-clr);
+    font-weight: 800;
+}
+
+
+/****REGISTRATION FORM****/
+
+.bg-box {
+    width: 50%;
+    transform: translate(50%, 10%);
+    border: 1px solid #143e6b;
+    border-radius: 5px;
+}
+
+.bg-box .heading h1 {
+    padding: 20px;
+    text-align: center;
+    background-color: #143e6b;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 30px;
+}
+
+.bg-box form {
+    padding: 20px;
+}
+
+.bg-box .btn {
+    background-color: #143e6b;
+}
+
+.bg-box .form-group {
+    margin-bottom: 10px!important;
+}

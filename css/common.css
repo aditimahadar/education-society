@@ -1,0 +1,92 @@
+:root {
+    --primary-clr: #0b1b69;
+    --yellow: #ffd027;
+    --white-color: #ffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    margin-bottom: 10px !important;
+    color: var(--primary-clr);
+}
+
+.btn-web {
+    width: 180px !important;
+    max-width: 180px !important;
+    height: 45px;
+    border-radius: 30px;
+    background: var(--primary-clr);
+    color: var(--white-color);
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.banner {
+    padding: 50px 0px 100px 0px;
+}
+
+.banner .container-fluid {
+    padding: 0px;
+}
+
+.title h5 {
+    color: var(--primary-clr);
+    padding-left: 50px;
+    position: relative;
+    display: inline;
+}
+
+.title h5:after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1;
+    background: var(--yellow);
+}
+
+.title h2 {
+    color: #0b1b69;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 36px;
+}
